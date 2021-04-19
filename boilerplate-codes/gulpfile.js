@@ -32,7 +32,7 @@ gulp.task('browser-sync', ['sass', 'nodemon'], function() {
 	browserSync.init(null, {
 		proxy: 'http://127.0.0.1:5000',
         files: path.monitoredFiles,
-        browser: 'chrome',
+        browser: 'google-chrome',
         port: 7000
 	});
 });

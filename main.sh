@@ -28,7 +28,7 @@ mkdir ./$foldersName/dist/css
 cp boilerplate-codes/default-dist.html ./$foldersName/dist/default.html
 mkdir ./$foldersName/src
 echo 
-sh boilerplate-codes/default-page-builder.sh "$PWD/$foldersName" $foldersName
+sh boilerplate-codes/default-page-builder.sh "$PWD/$foldersName/src" $foldersName
 cp boilerplate-codes/server.js ./$foldersName/src
 mkdir ./$foldersName/src/ext
 mkdir ./$foldersName/src/js-local
@@ -55,8 +55,8 @@ cd ../$foldersName
 echo "npm now installing your dependancies"
 npm install
 printf "node_modules/*" > .gitignore
-echo --------------------------------
-echo ----------- your application is running -----------
-echo --------------------------------
-sh gulp
+echo ---------------------------------
+echo -- your application is running --
+echo ---------------------------------
+gulp
 code ../$foldersName
