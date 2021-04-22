@@ -49,6 +49,7 @@ cp boilerplate-codes/reset.scss ./$foldersName/src/ui/scss/reset.scss
 mkdir ./$foldersName/src/views
 mkdir ./$foldersName/.vscode
 printf "files.encoding : utf8" > ./$foldersName/.vscode/settings.json
+cp boilerplate-codes/.editorconfig ./$foldersName
 sh boilerplate-codes/package-json-builder.sh "$PWD/$foldersName" "$foldersName" "$foldersVersion" "$folderDescription" "$authorName"
 mv $foldersName ..
 cd ../$foldersName
